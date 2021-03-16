@@ -9,7 +9,7 @@ components: Drawer, SwipeableDrawer
 
 [Navigation drawers](https://material.io/design/components/navigation-drawer.html) (or "sidebars") provide access to destinations and app functionality, such as switching accounts. Они могут либо находится всегда в открытом состоянии либо контролироватся с помощью навигационного меню.
 
-[Боковые панели](https://material. io/design/components/sheets-side.html) являются дополнительными элементами, в основном используемыми на планшетах и ПК.
+\[Боковые панели\](https://material. io/design/components/sheets-side.html) являются дополнительными элементами, в основном используемыми на планшетах и ПК.
 
 ## Скрытая Панель
 
@@ -28,7 +28,6 @@ The Drawer can be cancelled by clicking the overlay or pressing the Esc key. It 
 {{"demo": "pages/components/drawers/SwipeableTemporaryDrawer.js"}}
 
 Для оптимальной удобства использования компонента используются следующие свойства:
-
 - iOS is hosted on high-end devices. The backdrop transition can be enabled without dropping frames. Производительность достаточно хороша.
 - iOS has a "swipe to go back" feature that interferes with the discovery feature, so discovery has to be disabled.
 
