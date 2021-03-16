@@ -7,9 +7,9 @@ components: Hidden
 
 <p class="description">Quickly and responsively toggle the visibility value of components and more with the hidden utilities.</p>
 
-Tous les éléments sont visibles à moins **qu'ils soient explicitement cachés**. To ease integration with Material-UI's [responsive breakpoints](/customization/breakpoints/), this component can be used to hide any content, or you can use it in conjunction with the [`Grid`](/components/grid/) component.
+All elements are visible unless **they are explicitly hidden**. To ease integration with Material-UI's [responsive breakpoints](/customization/breakpoints/), this component can be used to hide any content, or you can use it in conjunction with the [`Grid`](/components/grid/) component.
 
-## Comment ça marche
+## How it works
 
 Hidden works with a range of breakpoints e.g. `xsUp` or `mdDown`, or one or more breakpoints e.g. `only='sm'` or `only={['md', 'xl']}`. Ranges and individual breakpoints can be used simultaneously to achieve very customized behavior. The ranges are inclusive of the specified breakpoints.
 
