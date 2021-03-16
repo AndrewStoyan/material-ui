@@ -55,12 +55,12 @@ Quando você renderiza a barra de aplicativos com um posicionamento fixo, a dime
 ```jsx
 function App() {
   return (
-    <React.Fragment>
+    <React. Fragment>
       <AppBar position="fixed">
         <Toolbar>{/* conteúdo */}</Toolbar>
       </AppBar>
       <Toolbar />
-    </React.Fragment>
+    </React. Fragment>
   );
 }
 ```
@@ -75,14 +75,12 @@ const useStyles = makeStyles(theme => ({
 function App() {
   const classes = useStyles();
   return (
-    <React.Fragment>
+    <React. Fragment>
       <AppBar position="fixed">
         <Toolbar>{/* conteúdo */}</Toolbar>
       </AppBar>
       <div className={classes.offset} />
-    </React.Fragment>
-  )
-};
+    </React.
 ```
 
 ## Rolagem
@@ -113,9 +111,9 @@ Um botão de ação flutuante aparece na rolagem para facilitar o retorno ao top
 
 1. `options` (*Object* [opcional]):
 
-- `options.disableHysteresis` (*Boolean* [opcional]): Padrão `false`. Desabilita a histerese. Ignora a direção de rolagem ao determinar o valor de `trigger`.
-- `options.target` (*Node* [opcional]): Padrão `window`.
-- `options.threshold` (*Number* [opcional]): Padrão `100`. Modifica o valor limite que aciona a `trigger` quando a barra de rolagem vertical cruzar ou chegar a este limite.
+    - `options.disableHysteresis` (*Boolean* [opcional]): Padrão `false`. Desabilita a histerese. Ignora a direção de rolagem ao determinar o valor de `trigger`.
+    - `options.target` (*Node* [opcional]): Padrão `window`.
+    - `options.threshold` (*Number* [opcional]): Padrão `100`. Modifica o valor limite que aciona a `trigger` quando a barra de rolagem vertical cruzar ou chegar a este limite.
 
 #### Retornos
 
