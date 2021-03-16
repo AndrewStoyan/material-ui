@@ -3,7 +3,7 @@ title: Компонент React Divider
 components: Divider
 ---
 
-# Divider (разделитель)
+# Divider
 
 <p class="description">Разделитель - это тонкая линия, которая группирует содержимое (контент) в списки и макеты (слои).</p>
 
