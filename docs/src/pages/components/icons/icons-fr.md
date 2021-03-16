@@ -3,9 +3,9 @@ title: React Icon Component
 components: Icon, SvgIcon
 ---
 
-# Icônes
+# Icons
 
-<p class="description">Conseils et suggestions pour l'utilisation des icônes avec Material-UI.</p>
+<p class="description">Guidance and suggestions for using icons with Material-UI.</p>
 
 Material-UI provides icons support in three ways:
 
@@ -13,13 +13,13 @@ Material-UI provides icons support in three ways:
 1. With the [SvgIcon](#svgicon) component, a React wrapper for custom SVG icons.
 1. With the [Icon](#icon-font-icons) component, a React wrapper for custom font icons.
 
-## Icônes Material
+## Material Icons
 
 Material Design has standardized over 1,100 official icons, each in five different "themes" (see below). For each SVG icon, we export the respective React component from the @material-ui/icons package. You can [search the full list of these icons](/components/material-icons/).
 
 ### Installation
 
-Installez le package dans votre répertoire de projet avec:
+Install the package in your project directory with:
 
 ```sh
 // with npm
@@ -34,14 +34,14 @@ These components use the Material-UI SvgIcon component to render the SVG path fo
 If you are not already using Material-UI in your project, you can add it with:
 
 ```sh
-// avec npm
+// with npm
 npm install @material-ui/core
 
-// avec yarn
+// with yarn
 yarn add @material-ui/core
 ```
 
-### Utilisation
+### Usage
 
 Import icons using one of these two options:
 
@@ -90,7 +90,7 @@ function HomeIcon(props) {
 }
 ```
 
-### Couleur
+### Color
 
 {{"demo": "pages/components/icons/SvgIconsColor.js"}}
 
@@ -144,7 +144,7 @@ Note: [mdi-material-ui](https://github.com/TeamWertarbyte/mdi-material-ui) has a
 
 ## Icon (Font icons)
 
-Le composant `Icon` affichera une icône à partir de toute police d’icône prenant en charge les ligatures. Avant de commencer, vous devez en inclure une, telle que la police [Material icon](https://google.github.io/material-design-icons/#icon-font-for-the-web) dans votre projet, par exemple via Google Web Fonts:
+The `Icon` component will display an icon from any icon font that supports ligatures. As a prerequisite, you must include one, such as the [Material icon font](https://google.github.io/material-design-icons/#icon-font-for-the-web) in your project, for instance, via Google Web Fonts:
 
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -152,7 +152,7 @@ Le composant `Icon` affichera une icône à partir de toute police d’icône pr
 
 `Icon` will set the correct class name for the Material icon font. For other fonts, you must supply the class name using the Icon component's `className` property.
 
-Pour utiliser une icône, enveloppez simplement le nom de l'icône (ligature de police) avec le composant `Icon` , par exemple:
+To use an icon simply wrap the icon name (font ligature) with the `Icon` component, for example:
 
 ```jsx
 import Icon from '@material-ui/core/Icon';
@@ -160,39 +160,39 @@ import Icon from '@material-ui/core/Icon';
 <Icon>star</Icon>
 ```
 
-Par défaut, une icône héritera de la couleur de texte actuelle. Vous pouvez éventuellement définir la couleur de l'icône à l'aide de l'une des propriétés de couleur du thème: `primary`, `secondary`, `action`, `error` & `disabled`.
+By default, an Icon will inherit the current text color. Optionally, you can set the icon color using one of the theme color properties: `primary`, `secondary`, `action`, `error` & `disabled`.
 
-### Icônes de police Material
+### Font Material icons
 
 {{"demo": "pages/components/icons/Icons.js"}}
 
 ### Font Awesome
 
-[Font Awesome](https://fontawesome.com/icons) Peut être utilisé avec le composant `Icon` comme suit:
+[Font Awesome](https://fontawesome.com/icons) can be used with the `Icon` component as follow:
 
 {{"demo": "pages/components/icons/FontAwesome.js", "hideEditButton": true}}
 
 ## Font vs SVG. Which approach to use?
 
-Les deux approches fonctionnent bien, cependant, il existe quelques différences subtiles, notamment en termes de performances et de qualité de rendu. Lorsque cela est possible, Le SVG est préférable car il permet la division de code, prend en charge plus d'icônes, rend les rendus plus rapidement et mieux.
+Both approaches work fine, however, there are some subtle differences, especially in terms of performance and rendering quality. Whenever possible SVG is preferred as it allows code splitting, supports more icons, renders faster and better.
 
-Pour plus de détails, vous pouvez voir [pourquoi GitHub a migré d'icônes de police en icônes SVG](https://github.blog/2016-02-22-delivering-octicons-with-svg/).
+For more details, you can check out [why GitHub migrated from font icons to SVG icons](https://github.blog/2016-02-22-delivering-octicons-with-svg/).
 
-## Accessibilité
+## Accessibility
 
-Les icônes peuvent transmettre toutes sortes d'informations utiles. Il est donc important qu'elles atteignent le plus grand nombre de personnes possible. There are two use cases you’ll want to consider:
-- **Decorative Icons** are only being used for visual or branding reinforcement. S'ils étaient supprimés de la page, les utilisateurs comprendraient toujours et pourraient utiliser votre page.
-- **Les Icônes sémantiques** sont celles que vous utilisez pour transmettre du sens, plutôt que de simples décorations. Cela inclut les icônes sans texte adjacentes utilisées comme commandes interactives - boutons, éléments de formulaire, bascules, etc.
+Icons can convey all sorts of meaningful information, so it’s important that they reach the largest amount of people possible. There are two use cases you’ll want to consider:
+- **Decorative Icons** are only being used for visual or branding reinforcement. If they were removed from the page, users would still understand and be able to use your page.
+- **Semantic Icons** are ones that you’re using to convey meaning, rather than just pure decoration. This includes icons without text next to them used as interactive controls — buttons, form elements, toggles, etc.
 
-### Icônes SVG décoratives
+### Decorative SVG Icons
 
 If your icons are purely decorative, you’re already done! The `aria-hidden=true` attribute is added so that your icons are properly accessible (invisible).
 
-### Icônes SVG sémantiques
+### Semantic SVG Icons
 
-Si votre icône a une signification sémantique, il vous suffit d'ajouter une propriété `titleAccess = "meaning"` . The `role="img"` attribute and the `<title>` element are added so that your icons are properly accessible.
+If your icon has semantic meaning, all you need to do is throw in a `titleAccess="meaning"` property. The `role="img"` attribute and the `<title>` element are added so that your icons are properly accessible.
 
-Dans le cas d'éléments interactifs "focusable", comme avec un bouton icône, vous pouvez utiliser la propriété `aria-label`:
+In the case of focusable interactive elements, like when used with an icon button, you can use the `aria-label` property:
 
 ```jsx
 import IconButton from '@material-ui/core/IconButton';
@@ -200,19 +200,20 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 
 // ...
 
-import IconButton from '@material-ui/core/IconButton';
-import SvgIcon from '@material-ui/core/SvgIcon';
-
-// ...
+<IconButton aria-label="delete">
+  <SvgIcon>
+    <path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z" />
+  </SvgIcon>
+</IconButton>
 ```
 
-### Icônes de polices décoratives
+### Decorative Font Icons
 
 If your icons are purely decorative, you’re already done! The `aria-hidden=true` attribute is added so that your icons are properly accessible (invisible).
 
-### Icônes de polices sémantiques
+### Semantic Font Icons
 
-Si vos icônes ont un sens sémantique, vous devez fournir une alternative textuelle uniquement visible aux technologies d'assistance.
+If your icons have semantic meaning, you need to provide a text alternative only visible to assistive technologies.
 
 ```jsx
 import Icon from '@material-ui/core/Icon';
@@ -220,12 +221,10 @@ import Typography from '@material-ui/core/Typography';
 
 // ...
 
-import Icon from '@material-ui/core/Icon';
-import Typography from '@material-ui/core/Typography';
-
-// ...
+<Icon>add_circle</Icon>
+<Typography variant="srOnly">Create a user</Typography>
 ```
 
-### Référence
+### Reference
 
 - https://developer.paciellogroup.com/blog/2013/12/using-aria-enhance-svg-accessibility/
