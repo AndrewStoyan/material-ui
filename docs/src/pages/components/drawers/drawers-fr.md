@@ -3,15 +3,15 @@ title: React Drawer component
 components: Drawer, SwipeableDrawer
 ---
 
-# Drawer (Tiroir)
+# Drawer
 
-<p class="description">Les tiroirs de navigation permettent d'accéder aux destinations de votre application. Les feuilles latérales sont des surfaces contenant du contenu supplémentaire ancré au bord gauche ou droit de l'écran.</p>
+<p class="description">Navigation drawers provide access to destinations in your app. Side sheets are surfaces containing supplementary content that are anchored to the left or right edge of the screen.</p>
 
 [Navigation drawers](https://material.io/design/components/navigation-drawer.html) (or "sidebars") provide access to destinations and app functionality, such as switching accounts. They can either be permanently on-screen or controlled by a navigation menu icon.
 
 [Side sheets](https://material.io/design/components/sheets-side.html) are supplementary surfaces primarily used on tablet and desktop.
 
-## Tiroir temporaire
+## Temporary drawer
 
 Temporary navigation drawers can toggle open or closed. Closed by default, the drawer opens temporarily above all other content until a section is selected.
 
@@ -28,8 +28,7 @@ This component comes with a 2 kB gzipped payload overhead. Some low-end mobile d
 {{"demo": "pages/components/drawers/SwipeableTemporaryDrawer.js"}}
 
 The following properties are used in this documentation website for optimal usability of the component:
-
-- iOS is hosted on high-end devices. The performance will be good enough. The backdrop transition can be enabled without dropping frames.
+- iOS is hosted on high-end devices. The backdrop transition can be enabled without dropping frames. The performance will be good enough.
 - iOS has a "swipe to go back" feature that interferes with the discovery feature, so discovery has to be disabled.
 
 ```jsx
@@ -44,7 +43,7 @@ The `Hidden` responsive helper component allows showing different types of drawe
 
 {{"demo": "pages/components/drawers/ResponsiveDrawer.js", "iframe": true}}
 
-## Tiroir persistant
+## Persistent drawer
 
 Persistent navigation drawers can toggle open or closed. The drawer sits on the same surface elevation as the content. It is closed by default and opens by selecting the menu icon, and stays open until closed by the user. The state of the drawer is remembered from action to action and session to session.
 
@@ -56,7 +55,7 @@ Persistent navigation drawers are acceptable for all sizes larger than mobile. T
 
 {{"demo": "pages/components/drawers/PersistentDrawerRight.js", "iframe": true}}
 
-## Mini variante de tiroir
+## Mini variant drawer
 
 In this variation, the persistent navigation drawer changes its width. Its resting state is as a mini-drawer at the same elevation as the content, clipped by the app bar. When expanded, it appears as the standard persistent navigation drawer.
 
@@ -64,22 +63,22 @@ The mini variant is recommended for apps sections that need quick selection acce
 
 {{"demo": "pages/components/drawers/MiniDrawer.js", "iframe": true}}
 
-## Tiroir permanent
+## Permanent drawer
 
 Permanent navigation drawers are always visible and pinned to the left edge, at the same elevation as the content or background. They cannot be closed.
 
-Les tiroirs de navigation permanents sont les **valeurs par défaut recommandées pour le bureau**.
+Permanent navigation drawers are the **recommended default for desktop**.
 
-### Navigation pleine hauteur
+### Full-height navigation
 
-Applications axées sur la consommation d'informations utilisant une hiérarchie de gauche à droite.
+Apps focused on information consumption that use a left-to-right hierarchy.
 
 {{"demo": "pages/components/drawers/PermanentDrawerLeft.js", "iframe": true}}
 
 {{"demo": "pages/components/drawers/PermanentDrawerRight.js", "iframe": true}}
 
-### Clippé sous la barre d'application
+### Clipped under the app bar
 
-Des applications axées sur la productivité qui nécessitent un équilibre sur l’écran.
+Apps focused on productivity that require balance across the screen.
 
 {{"demo": "pages/components/drawers/ClippedDrawer.js", "iframe": true}}
