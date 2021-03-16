@@ -1,33 +1,33 @@
 ---
-title: Détecter les clics en dehors du composant React
+title: Detect click outside React component
 components: ClickAwayListener
 ---
 
-# Click Away Listener
+# Click away listener
 
-<p class="description">Détecte si un événement de clic s'est produit en dehors d'un élément. Il écoute les clics qui se produisent quelque part dans le document.</p>
+<p class="description">Detect if a click event happened outside of an element. It listens for clicks that occur somewhere in the document.</p>
 
-- 📦 [1,5 ko gzippé](/size-snapshot).
-- ⚛️ Les portails d'assistance
+- 📦 [1.5 kB gzipped](/size-snapshot).
+- ⚛️ Support portals
 
-## Exemple
+## Example
 
-Par exemple, si vous avez besoin de cacher un menu déroulant lorsque des personnes cliquent n'importe où sur votre page :
+For instance, if you need to hide a menu dropdown when people click anywhere else on your page:
 
 {{"demo": "pages/components/click-away-listener/ClickAway.js"}}
 
-Notez que le composant n'accepte qu'un seul élément enfant. Vous pouvez trouver une démo plus avancée dans la section de la documentation du menu [](/components/menus/#menulist-composition).
+Notice that the component only accepts one child element. You can find a more advanced demo on the [Menu documentation section](/components/menus/#menulist-composition).
 
 ## Portal
 
-La démo suivante utilise [`Portal`](/components/portal/) pour rendre le menu déroulant dans un nouveau « sous-arbre » en dehors de la hiérarchie DOM actuelle.
+The following demo uses [`Portal`](/components/portal/) to render the dropdown into a new "subtree" outside of current DOM hierarchy.
 
 {{"demo": "pages/components/click-away-listener/PortalClickAway.js"}}
 
-## Arête principale
+## Leading edge
 
-Par défaut, le composant répond aux événements finaux (cliquez sur + touche fin). Cependant, vous pouvez le configurer pour répondre aux événements principaux (souris vers le bas + démarrage tactile).
+By default, the component responds to the trailing events (click + touch end). However, you can configure it to respond to the leading events (mouse down + touch start).
 
 {{"demo": "pages/components/click-away-listener/LeadingClickAway.js"}}
 
-> ⚠ Dans ce mode, seules les interactions sur la barre de défilement du document sont ignorées.
+> ⚠️ In this mode, only interactions on the scrollbar of the document is ignored.
