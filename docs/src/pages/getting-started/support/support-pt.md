@@ -21,7 +21,7 @@ Usamos issues do GitHub exclusivamente para rastrear bugs e solicitações de re
 #### Novas diretrizes para issues
 
 - Por favor, siga o modelo de issue.
-- Comece o título com '[ComponentName]', quando apropriado, e use uma descrição sucinta que ajude outras pessoas a encontrar issues semelhantes. Use o idioma padrão do projeto que é o inglês. 
+- Comece o título com '[ComponentName]', quando apropriado, e use uma descrição sucinta que ajude outras pessoas a encontrar issues semelhantes.
   - "doesn't work" ❌
   - "[Button] Add support for <some feature>" ✅
 - Não agrupe vários tópicos em uma issue - cada um deve ter sua própria issue.
@@ -58,6 +58,7 @@ O status atual de cada versão do Material-UI é o seguinte:
 - ~Material-UI v2 (nunca existiu)~.
 - Material-UI v1 (reescrita): ❌ Inativa.
 - Material-UI v0.x: ❌ Inativa.
+- Material-UI v0.x: ❌ Inactive.
 
 Para equipes e organizações que exigem suporte adicional para versões mais antigas, o Material-UI possui [opções disponíveis](#enterprise).
 
@@ -82,12 +83,16 @@ O resultado final? Todas as capacidades que você espera de um software de níve
 <a
   data-ga-event-category="support"
   data-ga-event-action="tidelift"
-  href="https://tidelift.com/subscription/pkg/npm-material-ui?utm_source=npm-material-ui&utm_medium=referral&utm_campaign=enterprise"> Obter mais detalhes </a>
+  href="https://tidelift.com/subscription/pkg/npm-material-ui?utm_source=npm-material-ui&utm_medium=referral&utm_campaign=enterprise">
+  Obter mais detalhes
+</a>
 
 <a
   data-ga-event-category="support"
   data-ga-event-action="tidelift"
-  href="https://tidelift.com/subscription/request-a-demo?utm_source=npm-material-ui&utm_medium=referral&utm_campaign=enterprise"> Solicite uma demonstração </a>
+  href="https://tidelift.com/subscription/request-a-demo?utm_source=npm-material-ui&utm_medium=referral&utm_campaign=enterprise">
+  Solicite uma demonstração
+</a>
 
 ### Trabalho customizado 🛠
 
