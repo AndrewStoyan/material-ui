@@ -29,14 +29,13 @@ yarn add @material-ui/core
 ## Font Icons 字体图标
 
 若您想使用 `Icon` 组件，前提条件是安装了 [Material icons](https://material.io/tools/icons/) 的字体。 我们提供了安装字体的[一些说明](/components/icons/#font-icons)。 例如，通过 Google Web Fonts 引入：
-
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```
 
 ## SVG 图标
 
-在 [icons 示例](/components/icons/)中， 您可以发现一些由我们提供的 SVG Material icons。若您想使用这个图标，您必须安装 [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons) 这个包：
+在 [icons 示例](/components/icons/)中， 您可以发现一些由我们提供的 SVG Material icons。 若您想使用这个图标，您必须安装 [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons) 这个包：
 
 ```sh
 // 通过 npm
