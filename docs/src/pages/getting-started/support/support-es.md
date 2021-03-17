@@ -21,7 +21,7 @@ Utilizamos los problemas de GitHub exclusivamente como un rastreador de fallos y
 #### Nuevas directrices de problemas
 
 - Por favor, siga la plantilla de problema.
-- Comience el título con '[ComponentName]' donde corresponda, y utilice una descripción sucinta que ayude a otros a encontrar problemas similares. 
+- Comience el título con '[ComponentName]' donde corresponda, y utilice una descripción sucinta que ayude a otros a encontrar problemas similares.
   - "no funciona" ❌
   - "[Button] Add support for <some feature>" ✅
 - Por favor, no agrupe varios temas en un solo problema: cada uno debería tener su propio problema en su lugar.
@@ -35,7 +35,7 @@ Manténgase al día con el desarrollo de la biblioteca siguiendo el blog.
 
 ### Recursos 📖
 
-¿Nuevo en Material-UI? ¡Es fácil de aprender si sabes por dónde empezar!
+¿Nuevo en Material-UI? ¡Es fácil de aprender si sabes por dónde empezar! It's easy to learn if you know where to start!
 
 [Aprende Material-UI](/getting-started/learn/)
 
@@ -58,6 +58,7 @@ El estado actual de cada versión de Material-UI es el siguiente:
 - ~Material-UI v2 (nunca existió)~.
 - Material-UI v1 (rewrite): ❌ Inactivo.
 - Material-interfaz de usuario v0.x: ❌ Inactivo.
+- Material-UI v0.x: ❌ Inactive.
 
 Para equipos y organizaciones que requieren soporte adicional para versiones anteriores, Material-UI tiene [opciones disponibles](#enterprise).
 
@@ -82,12 +83,16 @@ The end result? All of the capabilities you expect from commercial-grade softwar
 <a
   data-ga-event-category="support"
   data-ga-event-action="tidelift"
-  href="https://tidelift.com/subscription/pkg/npm-material-ui?utm_source=npm-material-ui&utm_medium=referral&utm_campaign=enterprise"> Obtener más detalles </a>
+  href="https://tidelift.com/subscription/pkg/npm-material-ui?utm_source=npm-material-ui&utm_medium=referral&utm_campaign=enterprise">
+  Obtener más detalles
+</a>
 
 <a
   data-ga-event-category="support"
   data-ga-event-action="tidelift"
-  href="https://tidelift.com/subscription/request-a-demo?utm_source=npm-material-ui&utm_medium=referral&utm_campaign=enterprise"> Solicite una demostración </a>
+  href="https://tidelift.com/subscription/request-a-demo?utm_source=npm-material-ui&utm_medium=referral&utm_campaign=enterprise">
+  Solicite una demostración
+</a>
 
 ### Trabajo personalizado 🛠
 
