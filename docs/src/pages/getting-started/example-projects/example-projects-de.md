@@ -25,28 +25,31 @@ If you want to start with a more complete and real-world example, you could take
 ### Kostenlos
 
 - [React Most Wanted](https://github.com/TarikHuber/react-most-wanted):
-    
+
   - Erstellt mit Create React App
   - Custom Create React App script to start a new project with just a single CLI command
   - Build for Firebase including Authentication using the official Firebase Web Auth UI
   - Routing with React Router including error handling (404) and lazy loading
   - All PWA features included (SW, Notifications, deferred installation prompt and more)
   - Optimized and scalable performance (all ~100 points on Lighthouse)
+
 - [RMUIF](https://github.com/phoqe/rmuif):
-    
+
   - Bootstrapped with Create React App, the same tooling works from the get-go
   - Built on top of Firebase with all their products for the web included
   - Robust routing with React Router including protected routes and error handling
   - Extensive mobile support with full-screen dialogs and react-swipeable-views for tabs
   - Cross-platform application monitoring with a focus on error reporting with Sentry
+
 - [Material Sense](https://github.com/alexanmtz/material-sense):
-    
+
   - Diagramme mit recharts
   - React Router mit einem Navigationsbeispiel
   - Ein Docker-Container mit einem Nginx-Server für den Produktionsaufbau
   - Erstellt mit Create React App
+
 - [React SaaS Template](https://github.com/dunky11/react-saas-template):
-    
+
   - Erstellt mit Create React App
   - Features a landing page, a blog, an area to login/register and an admin-dashboard
   - Fully routed using react-router
@@ -56,7 +59,7 @@ If you want to start with a more complete and real-world example, you could take
 ### Kostenpflichtig
 
 - [ScaffoldHub](https://scaffoldhub.io/?partner=1):
-    
+
   - Build your complete application with this online tool
   - Choose your framework and library (React & Material-UI!)
   - Choose your database (SQL, MongoDB or Firestore)

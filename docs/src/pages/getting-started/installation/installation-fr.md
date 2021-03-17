@@ -29,7 +29,6 @@ Materiel-UI a été conçu avec la police [Roboto](https://fonts.google.com/spec
 ## Polices d'icônes
 
 Voici [quelques instructions](/components/icons/#font-icons) sur la façon de le faire. In order to use the font `Icon` component, you must first add the [Material icons](https://material.io/tools/icons/) font. Par exemple, via Google Web Fonts:
-
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```

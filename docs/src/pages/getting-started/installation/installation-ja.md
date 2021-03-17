@@ -1,12 +1,12 @@
 # インストール
 
-<p class="description">Material-UIをインストールします。世界で最も人気のあるReact UIフレームワークです。</p>
+<p class="description">Material-UIをインストールします。 世界で最も人気のあるReact UIフレームワークです。</p>
 
 Material-UIは[ npmパッケージ](https://www.npmjs.com/package/@material-ui/core) として入手可能です。
 
 ## npm
 
-次のコマンドを実行してください。これで、あなたの`package.json` に保存できます。
+次のコマンドを実行してください。 これで、あなたの`package.json` に保存できます。
 
 ```sh
 // npmの場合
@@ -20,7 +20,7 @@ yarn add @material-ui/core
 
 ## Robotoフォント
 
-Material-UIは[Roboto](https://fonts.google.com/specimen/Roboto)フォントを考慮して設計されています。 その為、必ず[以下の手順](/components/typography/#general) に従ってください。 たとえば、Google Web Fontsを用いて、 その為、必ず[以下の手順](/components/typography/#general) に従ってください。 たとえば、Google Web Fontsを用いて、 その為、必ず[以下の手順](/components/typography/#general) に従ってください。 たとえば、Google Web Fontsを用いて、 その為、必ず[以下の手順](/components/typography/#general) に従ってください。 たとえば、Google Web Fontsを用いて、 その為、必ず[以下の手順](/components/typography/#general) に従ってください。 たとえば、Google Web Fontsを用いて、
+In order to use the font `Icon` component, you must first add the [Material icons](https://material.io/tools/icons/) font. こちらは、その時の[手続き](/components/icons/#font-icons)です。 たとえば、Google Web Fontsを用いて、
 
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
@@ -28,8 +28,7 @@ Material-UIは[Roboto](https://fonts.google.com/specimen/Roboto)フォントを�
 
 ## フォントアイコン
 
-In order to use the font `Icon` component, you must first add the [Material icons](https://material.io/tools/icons/) font. こちらは、その時の[手続き](/components/icons/#font-icons)です。 たとえば、Google Web Fontsを用いて、
-
+In order to use the font `Icon` component, you must first add the [Material icons](https://material.io/tools/icons/) font. Here are [some instructions](/components/icons/#font-icons) on how to do so. たとえば、Google Web Fontsを用いて、
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```
@@ -59,7 +58,7 @@ Two Universal Module Definition (**UMD**) files are provided:
 
 ⚠️ Using this approach in **production** is **discouraged** though - the client has to download the entire library, regardless of which components are actually used, affecting performance and bandwidth utilization.
 
-⚠️ UMDリンクは、ライブラリの最新バージョンを示すために`latest`タグを使用しています。 このポインターは**不安定です** 、新しいバージョンがリリースされると変わります。 ⚠️ UMDリンクは、ライブラリの最新バージョンを示すために`latest`タグを使用しています。 このポインターは**不安定です** 、新しいバージョンがリリースされると変わります。 You should consider pointing to a specific version, such as [v4.4.0](https://unpkg.com/@material-ui/core@4.4.0/umd/material-ui.development.js). このポインターは**不安定です** 、新しいバージョンがリリースされると変わります。 ⚠️ UMDリンクは、ライブラリの最新バージョンを示すために`latest`タグを使用しています。 このポインターは**不安定です** 、新しいバージョンがリリースされると変わります。 You should consider pointing to a specific version, such as [v4.4.0](https://unpkg.com/@material-ui/core@4.4.0/umd/material-ui.development.js).
+⚠️ The UMD links are using the `latest` tag to point to the latest version of the library. This pointer is **unstable**, it shifts as we release new versions. You should consider pointing to a specific version, such as [v4.4.0](https://unpkg.com/@material-ui/core@4.4.0/umd/material-ui.development.js).
 
 ## Design resources
 

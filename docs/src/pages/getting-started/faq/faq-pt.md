@@ -11,7 +11,7 @@ Existem muitas maneiras de apoiar o Material-UI:
 - **Espalhe a palavra**. Evangelize Material-UI [vinculando o material-ui.com](https://material-ui.com/) no seu site, todo backlink conta. Siga-nos no [Twitter](https://twitter.com/MaterialUI), curta e retuíte as notícias importantes. Ou apenas fale sobre nós com os seus amigos.
 - **Dê-nos sua opinião**. Conte-nos o que estamos fazendo bem ou onde podemos melhorar. Por favor vote (👍) nos issues do GitHub que você está mais interessado em ver resolvidos.
 - **Ajude novos usuários**. Você pode responder a perguntas no [StackOverflow](https://stackoverflow.com/questions/tagged/material-ui).
-- **Faça as alterações acontecerem**. 
+- **Faça as alterações acontecerem**.
   - Edite a documentação. Cada página da versão em inglês tem um link "EDIT THIS PAGE" no canto superior direito.
   - Reporte erros ou recursos faltantes [criando uma issue](https://github.com/mui-org/material-ui/issues/new).
   - Revise e comente em [pull requests](https://github.com/mui-org/material-ui/pulls) e [issues](https://github.com/mui-org/material-ui/issues) existentes.
@@ -37,7 +37,7 @@ No geral, é simples livrar-se desse problema encapsulando cada aplicação Mate
 
 ## Por que os elementos posicionados como fixos se movem quando um modal é aberto?
 
-A rolagem é bloqueada assim que um modal é aberto. Isto impede a interação com o segundo plano, pois o modal deve ser o único conteúdo interativo. No entanto, removendo a barra de rolagem pode fazer com que seus **elementos fixos posicionados** se movam. Nesta situação, você pode aplicar um nome de classe global `.mui-fixed ` para informar ao Material-UI para manipular esses elementos.
+A rolagem é bloqueada assim que um modal é aberto. Isto impede a interação com o segundo plano, pois o modal deve ser o único conteúdo interativo. No entanto, removendo a barra de rolagem pode fazer com que seus **elementos fixos posicionados** se movam. Nesta situação, você pode aplicar um nome de classe global `.mui-fixed` para informar ao Material-UI para manipular esses elementos.
 
 ## Como posso desativar o efeito cascata globalmente?
 
@@ -137,7 +137,6 @@ const element = ref.current;
 ```
 
 Se você não tem certeza se o componente do Material-UI em questão encaminha seu ref, você pode verificar a documentação da API em "Props" por exemplo, a API [Button API](/api/button/#props)
-
 > O ref é encaminhado para o elemento raiz.
 
 indicando que você pode acessar o elemento DOM como uma referência.
@@ -218,7 +217,7 @@ Se você tiver várias aplicações em execução em uma página, considere o us
       app2: "./src/app.2.js",
     },
     plugins: [
-+     new webpack.optimize.CommonsChunkPlugin({
++     new webpack.optimize. CommonsChunkPlugin({
 +       name: "vendor",
 +       minChunks: Infinity,
 +     }),
@@ -239,7 +238,6 @@ O CSS é gerado apenas no primeiro carregamento da página. Em seguida, o CSS n�
 A solução de estilo depende de um cache, o *sheets manager*, para injetar apenas o CSS uma vez por tipo de componente (se você usar dois botões, você só precisa do CSS do botão uma vez). Você precisa criar **uma nova instância de `sheets` para cada requisição**.
 
 *exemplo de correção:*
-
 ```diff
 -// Crie uma instância de sheets.
 -const sheets = new ServerStyleSheets();
@@ -252,6 +250,8 @@ function handleRender(req, res) {
   //…
 
   // Renderize o componente para uma string.
+
+  // Render the component to a string.
   const html = ReactDOMServer.renderToString(
 ```
 
@@ -266,7 +266,6 @@ O valor de nomes de classe depende da lógica empregada pelo [gerador de nome de
 - Você precisa fornecer um novo gerador de nome de classe para cada requisição. Mas você não deve compartilhar um `createGenerateClassName()` entre diferentes requisições:
 
 *exemplo de correção:*
-
 ```diff
 - // Crie um novo gerador de nome de classe.
 -const generateClassName = createGenerateClassName();
@@ -279,19 +278,19 @@ function handleRender(req, res) {
   //…
 
   // Renderize o componente para uma string.
+
+  // Render the component to a string.
   const html = ReactDOMServer.renderToString(
 ```
 
 - Você precisa verificar se seu cliente e servidor estão executando **exatamente a mesma versão** do Material-UI. É possível que uma incompatibilidade de versões menores possa causar problemas de estilo. Para verificar números de versão, execute `npm list @material-ui/core` no ambiente em que você cria sua aplicação e também em seu ambiente de implementação.
-  
-    Você também pode garantir a mesma versão em diferentes ambientes, definindo uma versão específica do MUI nas dependências do seu package.json.
+
+  Você também pode garantir a mesma versão em diferentes ambientes, definindo uma versão específica do MUI nas dependências do seu package.json.
 
 *exemplo de correção (package.json):*
-
 ```diff
   "dependencies": {
     ...
-
 -   "@material-ui/core": "^4.0.0",
 +   "@material-ui/core": "4.0.0",
     ...

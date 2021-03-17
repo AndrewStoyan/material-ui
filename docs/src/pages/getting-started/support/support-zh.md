@@ -21,7 +21,7 @@
 #### 新 Issue 指南
 
 - 请遵循 issue 模板。
-- 请适当的以 '[ComponentName]' 为标题开始，并加以简洁的描述，这样能够帮助其他人找到类似的问题。 
+- 请适当的以 '[ComponentName]' 为标题开始，并加以简洁的描述，这样能够帮助其他人找到类似的问题。
   - 使用"不工作"为标题 ❌
   - "[Button] 增加对 ... 的支持 <some feature>" ✅
 - 请不要在一个 issue 中涵盖多个——取而代之的，是每一个话题有其独自的 issue。
@@ -35,7 +35,7 @@
 
 ### 资源 📖
 
-您是第一次接触 Material-UI 吗? 如果你知道从哪里开始，就很容易学会！
+New to Material-UI? It's easy to learn if you know where to start!
 
 [学习使用 Material-UI](/getting-started/learn/)
 
@@ -55,9 +55,10 @@ Material-UI CE（社区版本）最初的时候就是 100% 的开源项目（MIT
 
 - Material-UI v4（hooks）：✅ 积极开发中。
 - Material-UI v3（更改支持的浏览器）：⚠️ 只处理安全性能的修复。
-- ~Material-UI v2 （根本不存在）~。 
-- Material-UI v1（重写）: ❌ 闲置。 
+- ~Material-UI v2 （根本不存在）~。
+- Material-UI v1（重写）: ❌ 闲置。
 - Material-UI v0.x：❌闲置。
+- Material-UI v0.x: ❌ Inactive.
 
 对于需要对旧版本提供额外支持的团队和组织，Material-UI 为您提供了 [可选方案](#enterprise)。
 
@@ -65,7 +66,7 @@ Material-UI CE（社区版本）最初的时候就是 100% 的开源项目（MIT
 
 ### Tidelift 订阅 <img src="/static/images/logos/tidelift.svg" width="24" height="24" alt="Tidelift logo" loading="lazy" />
 
-Material-UI 同其他数千种软件包的维护者一样都在与 Tidelift 合作，目的是提供一个维护涵盖您使用的所有开源软件的企业订阅。 
+Material-UI 同其他数千种软件包的维护者一样都在与 Tidelift 合作，目的是提供一个维护涵盖您使用的所有开源软件的企业订阅。
 
 我们当然推荐您试一下，若您想要兼有开源的灵活性和使用商业级软件的自信心。
 
@@ -73,7 +74,7 @@ Tidelift 订阅能够为您管理您的依赖包：
 
 - 获取不断地分类所需的工具，并了解您的应用程序所依赖的开源软件。
 - 您的订阅有助于向您使用的软件包的开源社区维护者支付费用，这也能确保它们符合您要求的标准。
-- 使用一些可扫描新的软件安全、证书和维护问题的工具，您可以主动解决问题，并且也可以向参与的开源维护者发出警告，以便他们能够帮助您解决这些问题。 
+- 使用一些可扫描新的软件安全、证书和维护问题的工具，您可以主动解决问题，并且也可以向参与的开源维护者发出警告，以便他们能够帮助您解决这些问题。
 - Tidelift 有助于衡量和改善你使用的开源软件依赖项的健康状况 — 从而改善您的应用程序的健康状况 — 与此同时会生成一个简短的列表，列出您的团队可以采取的一些积极影响的步骤，以便您进一步改进它们。
 - 您可以获得商业保证，而不是只使用免费的开源软件包，例如知识产权赔偿和服务级别协议（SLA）的支持。 您可以期望从专有软件中获得这些商业保证，并且在使用开源软件时也可以获得这些商业保证。
 
@@ -82,12 +83,16 @@ Tidelift 订阅能够为您管理您的依赖包：
 <a
   data-ga-event-category="support"
   data-ga-event-action="tidelift"
-  href="https://tidelift.com/subscription/pkg/npm-material-ui?utm_source=npm-material-ui&utm_medium=referral&utm_campaign=enterprise"> 获得更多详细信息 </a>
+  href="https://tidelift.com/subscription/pkg/npm-material-ui?utm_source=npm-material-ui&utm_medium=referral&utm_campaign=enterprise">
+  获得更多详细信息
+</a>
 
 <a
   data-ga-event-category="support"
   data-ga-event-action="tidelift"
-  href="https://tidelift.com/subscription/request-a-demo?utm_source=npm-material-ui&utm_medium=referral&utm_campaign=enterprise"> 申请一个演示 </a>
+  href="https://tidelift.com/subscription/request-a-demo?utm_source=npm-material-ui&utm_medium=referral&utm_campaign=enterprise">
+  申请一个演示
+</a>
 
 ### 定制的工作 🛠
 

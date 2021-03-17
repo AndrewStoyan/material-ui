@@ -29,14 +29,13 @@ yarn add @material-ui/core
 ## Font Icons 字体图标
 
 若您想使用 `Icon` 组件，前提条件是安装了 [Material icons](https://material.io/tools/icons/) 的字体。 我们提供了安装字体的[一些说明](/components/icons/#font-icons)。 例如，通过 Google Web Fonts 引入：
-
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```
 
 ## SVG 图标
 
-在 [icons 示例](/components/icons/)中， 您可以发现一些由我们提供的 SVG Material icons。若您想使用这个图标，您必须安装 [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons) 这个包：
+在 [icons 示例](/components/icons/)中， 您可以发现一些由我们提供的 SVG Material icons。 若您想使用这个图标，您必须安装 [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons) 这个包：
 
 ```sh
 // 通过 npm
@@ -71,5 +70,5 @@ yarn add @material-ui/icons
 
 - [Figma](https://material-ui.com/store/items/figma-react/?utm_source=docs&utm_medium=referral&utm_campaign=installation-figma)：大型 UI 套件，包含 600 多个手工制作的 Material-UI 组件。
 - [Sketch](https://material-ui.com/store/items/sketch-react/?utm_source=docs&utm_medium=referral&utm_campaign=installation-sketch)：大型 UI 套件，包含 600 多个手工制作的 Material-UI 符号。
-- [Adobe XD](https://material-ui.com/store/items/adobe-xd-react/?utm_source=docs&utm_medium=referral&utm_campaign=installation-adobe-xd)：大型 UI 套件，包含 600 多个手工制作的 Material-UI 符号。 
+- [Adobe XD](https://material-ui.com/store/items/adobe-xd-react/?utm_source=docs&utm_medium=referral&utm_campaign=installation-adobe-xd)：大型 UI 套件，包含 600 多个手工制作的 Material-UI 符号。
 - [Framer](https://packages.framer.com/package/material-ui/material-ui)：Material-UI 组件的小型 UI 套件
