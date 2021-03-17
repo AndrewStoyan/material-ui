@@ -6,7 +6,7 @@ Material-UI доступен в виде пакета [ npm ](https://www.npmjs.
 
 ## npm
 
-Для установки и сохранения в вашем ` package.json ` зависимости, запустите:
+Для установки и сохранения в вашем `package.json` зависимости, запустите:
 
 ```sh
 // with npm
@@ -28,8 +28,7 @@ Material-UI был разработан на основе шрифта [Roboto](
 
 ## Иконочный шрифт
 
-Вот [некоторые инструкции](/components/icons/#font-icons) как это сделать. Вот [некоторые инструкции](/components/icons/#font-icons) как это сделать. Например, через Google Web Fonts:
-
+In order to use the font `Icon` component, you must first add the [Material icons](https://material.io/tools/icons/) font. Here are [some instructions](/components/icons/#font-icons) on how to do so. Например, через Google Web Fonts:
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```
