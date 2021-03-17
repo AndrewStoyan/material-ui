@@ -11,7 +11,7 @@
 - **口口相传**。 通过在您的网站上 [链接到 material-ui.com](https://material-ui.com/) 来传播 Material-UI ，每个反向链接对我们来说都很重要。 在 [Twitter 上关注我们](https://twitter.com/MaterialUI) ，点赞并转发一些重要的新闻。 或者只是与您的朋友谈论我们。
 - **给我们反馈** 。 告诉我们一些做得好的地方或者可以改进的地方。 请给您最希望看到能够解决的问题投票（👍）。
 - **帮助新的用户** 。 您可以在 [StackOverflow](https://stackoverflow.com/questions/tagged/material-ui) 中回答一些问题。
-- **做出一些改变吧**。 
+- **做出一些改变吧**。
   - 编辑文档。 每个页面右上角都有一个“编辑此页面”的链接。
   - 通过 [创建一个问题](https://github.com/mui-org/material-ui/issues/new) 来报告错误或缺少的功能 。
   - 查看和评论一些现有的 [pull requests](https://github.com/mui-org/material-ui/pulls) 和 [issues](https://github.com/mui-org/material-ui/issues)。
@@ -137,7 +137,6 @@ const element = ref.current;
 ```
 
 如果您对相关 Material-UI 组件是否转发了它的 ref 存在疑问的时候，你可以查看“Props”下的 API 文档，例如 [Button API](/api/button/#props) 包含了
-
 > ref 会被转发到根元素。
 
 这就表明您可以使用一个 ref 来访问这个 DOM 元素。
@@ -146,7 +145,7 @@ const element = ref.current;
 
 如果您在控制台中看到类似下面的警告消息，那么您可能已经在页面上初始化了多个 `@material-ui/styles` 实例。
 
-> 看起来在这个应用程序中初始化了多个 `@material-ui/styles` 实例。 这可能会导致主题传播问题、类名称损坏、专一性问题，并使你的应用程序尺寸无端变大。 
+> 看起来在这个应用程序中初始化了多个 `@material-ui/styles` 实例。 这可能会导致主题传播问题、类名称损坏、专一性问题，并使你的应用程序尺寸无端变大。
 
 ### 可能的原因
 
@@ -186,7 +185,7 @@ lerna bootstrap --hoist
 
 另外，您也可以从 package.json 文件中删除 @material-ui/styles 项，然后手动将它移动到您顶层的 package.json 文件中。
 
-Lerna 根目录下的 package.json 文件示例： 
+Lerna 根目录下的 package.json 文件示例：
 
 ```json
 {
@@ -228,7 +227,7 @@ Lerna 根目录下的 package.json 文件示例：
 
 ## 我的应用没有在服务器上正确的渲染。
 
-如果您的程序渲染不正常，99% 的情况下都是配置问题： 缺少属性、调用顺序错误或缺少组件 — 服务端渲染对配置的要求是很严格的，要找出问题的最好方法是将您的项目与一个已经正常运行的项目配置进行比较。 请逐位查看 [参考实现](/guides/server-rendering/#reference-implementations)。
+If it doesn't work, in 99% of cases it's a configuration issue. A missing property, a wrong call order, or a missing component – server-side rendering is strict about configuration, and the best way to find out what's wrong is to compare your project to an already working setup. 请逐位查看 [参考实现](/guides/server-rendering/#reference-implementations)。
 
 ### CSS 仅在第一次加载时生效，然后就消失了
 
@@ -239,8 +238,8 @@ CSS 只在页面第一次加载时生成。 那么，若连续地请求服务器
 样式解决方案依赖于缓存，即 *sheets manager*，来为每个组件类只注入一次 CSS（如果您使用了两个按钮，则只需要应用一次按钮的 CSS）。 您需要为每个请求创建 **一个新的 `sheet` 实例**。
 
 *修复示例：*
-
 ```diff
+-// Create a sheets instance.
 -// 创建一个 sheets 实例
 
 -const sheets = new ServerStyleSheets();
@@ -253,6 +252,8 @@ function handleRender(req, res) {
   //…
 
   // 将组件渲染成一个字符串。
+
+  // Render the component to a string.
   const html = ReactDOMServer.renderToString(
 ```
 
@@ -267,7 +268,6 @@ function handleRender(req, res) {
 - 您需要为每个请求提供一个新的类名生成器。 但是您不应该在不同的请求之间共享 `createGenerateClassName()`：
 
 *修复示例：*
-
 ```diff
 -  // 创建一个新的类名生成器。
 -const generateClassName = createGenerateClassName();
@@ -280,22 +280,26 @@ function handleRender(req, res) {
   //…
 
   // 将组件渲染为一个字符串。
+
+  // Render the component to a string.
   const html = ReactDOMServer.renderToString(
 ```
 
 - 您需要验证您的客户端和服务端运行的 Material-UI 的**版本** 是否完全相同。 即使是小小的版本的不匹配也可能导致样式问题。 若想检查版本号，您可以在搭建应用程序的环境以及部署环境中都运行 `npm list @material-ui/core`。
-  
-    您也可以通过在 package.json 的依赖项中指定某一个特定的 MUI 版本，这样能够确保在不同环境中使用的版本是一致的。
+
+  您也可以通过在 package.json 的依赖项中指定某一个特定的 MUI 版本，这样能够确保在不同环境中使用的版本是一致的。
 
 *修复（package.json）的示例：*
-
 ```diff
   "dependencies": {
+    ...
+"dependencies": {
     ...
 
 -   "@material-ui/core": "^4.0.0",
 +   "@material-ui/core": "4.0.0",
     ...
+  },
   },
 ```
 
@@ -341,9 +345,9 @@ function Portal({ children, container }) {
 }
 ```
 
-这个简单的方法可能会启发您，`Portal` 可能会在挂载后重新渲染，因为在任何效果运行之前，refs 都是最新的。 然而，仅仅因为 ref 是最新的并不意味着它会指向一个定义好的实例。 如果 ref 是附着在一个 ref 所转发组件上的话，那么 DOM 节点何时可用是不明确的。 在上面的例子中，`Portal` 将产生一次效果，但可能不会重新渲染，因为 `ref.current` 的值仍然是 `null`。 而 Suspense 中的 React.lazy 组件中，这一点尤为明显。 上述实现也并不能代表 DOM 节点的一个变化。 
+这个简单的方法可能会启发您，`Portal` 可能会在挂载后重新渲染，因为在任何效果运行之前，refs 都是最新的。 然而，仅仅因为 ref 是最新的并不意味着它会指向一个定义好的实例。 如果 ref 是附着在一个 ref 所转发组件上的话，那么 DOM 节点何时可用是不明确的。 在上面的例子中，`Portal` 将产生一次效果，但可能不会重新渲染，因为 `ref.current` 的值仍然是 `null`。 而 Suspense 中的 React.lazy 组件中，这一点尤为明显。 上述实现也并不能代表 DOM 节点的一个变化。
 
-综上所述，这就是为什么我们需要一个具有实际 DOM 节点的属性，这样 React 就可以负责确定 `Portal` 何时应该重新渲染。 
+综上所述，这就是为什么我们需要一个具有实际 DOM 节点的属性，这样 React 就可以负责确定 `Portal` 何时应该重新渲染。
 
 ```jsx
 function App() {
@@ -363,7 +367,7 @@ function App() {
 
 ## clsx 依赖是用于什么？
 
-[clsx](https://github.com/lukeed/clsx)是一个小型工具集，用于有条件地从一个对象中构造 `className` 字符串，此对象的键是类字符串（class strings），而值是布尔值（booleans）。 
+[clsx](https://github.com/lukeed/clsx)是一个小型工具集，用于有条件地从一个对象中构造 `className` 字符串，此对象的键是类字符串（class strings），而值是布尔值（booleans）。
 
 请不要这样写：
 
@@ -373,6 +377,8 @@ function App() {
 return (
   <div
     className={`MuiButton-root ${disabled ? 'Mui-disabled' : ''} ${selected ? 'Mui-selected' : ''}`}
+  />
+); 'Mui-disabled' : ''} ${selected ? 'Mui-selected' : ''}`}
   />
 );
 ```
