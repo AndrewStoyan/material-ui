@@ -29,7 +29,6 @@ O Material-UI foi desenvolvido com base na fonte [Roboto](https://fonts.google.c
 ## Ícones
 
 Para utilizar o componente de fonte `Icon`, você deve primeiro adicionar a fonte [Material icons](https://material.io/tools/icons/). Aqui estão [ algumas instruções ](/components/icons/#font-icons) sobre como fazer isso. Como alternativa, carregue através do Google Web Fonts:
-
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```
